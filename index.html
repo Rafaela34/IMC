@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="pt-BR">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="calculando.js" defer> </script>
+    <script src="professor.js" defer> </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,17 +56,17 @@
            <form>
                <div class="campos">
                    <label for="">Nome:</label>
-                   <input type="text">
+                   <input type="text" id="nome" required>
                </div>
 
                <div class="campos unidade" data-unidade="metros">
                 <label for="">Altura:</label>
-                <input type="text" id="altura">
+                <input type="number" id="altura" required step="any">
                </div>
 
                <div class="campos unidade" data-unidade="quilos">
                 <label for="">Peso:</label>
-                <input type="text" id="peso">
+                <input type="number" id="peso" required step="any">
                </div>
 
                <button type="button"  id="calcular">CALCULAR </button>
